@@ -1,0 +1,13 @@
+Feature,Importance
+Employee_Training,0.3790625
+Technical_Score,0.3669375
+Financial_Loss,0.2521875
+Cybersecurity_Budget,0.1579375
+Reputation_Damage_Score,0.09762500000000003
+Operational_Disruption,0.09081250000000003
+Incident_Response_Time,0.031187500000000014
+Recovery_Time,0.02656250000000001
+Human_Score,0.008999999999999998
+Data_Backup_Availability,0.002562500000000012
+Use_of_MFA,0.0021250000000000435
+Org_Score,0.0019375000000000364
