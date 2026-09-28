@@ -1,7 +1,3 @@
-# CyberRiskAssessment
-An interpretable machine learning framework for cyber risk assessment in Small and Medium Enterprises (SMEs), integrating technical, human, and organisational factors with Decision Tree, Random Forest, XGBoost, and Stacking Ensemble models.
-
-
 # Cyber Security Risk Assessment for SMEs
 
 This project presents a machine learning-based cyber risk assessment framework designed for Small and Medium Enterprises (SMEs).
