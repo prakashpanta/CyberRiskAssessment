@@ -1,66 +1,104 @@
-# Cyber Security Risk Assessment for SMEs
+# Cyber Security Risk Assessment Framework for SMEs
 
-This project presents a machine learning-based cyber risk assessment framework designed for Small and Medium Enterprises (SMEs).
+## Overview
 
-The framework integrates technical, human, and organisational cybersecurity factors into a unified risk assessment model. A synthetic dataset is used to construct measurable risk scores and classify cybersecurity risk into three categories:
+This project presents a machine learning-based cyber risk assessment framework for Small and Medium Enterprises (SMEs). The framework integrates technical, human and organisational cybersecurity factors into a unified cyber risk assessment model.
+
+A synthetic cyber risk scoring methodology was developed to quantify cybersecurity risk and classify organisations into three risk categories:
 
 - Low Risk
 - Medium Risk
 - High Risk
 
-The project evaluates multiple machine learning approaches, including:
+The framework was evaluated using multiple machine learning algorithms, including Decision Tree, Random Forest, XGBoost and Stacking Ensemble models.
+
+The Stacking Ensemble combines Decision Tree, Random Forest and XGBoost classifiers through a Logistic Regression meta-learner to improve cyber risk prediction performance.
+
+In addition, a Streamlit-based dashboard was developed to provide an interactive interface for cyber risk assessment, visualisation and recommendation generation.
+
+---
+
+## Research Objectives
+
+The research aims to:
+
+- Develop a socio-technical cyber risk assessment framework for SMEs.
+- Integrate technical, human and organisational cybersecurity factors into a unified assessment model.
+- Apply machine learning techniques for cyber risk classification.
+- Evaluate and compare multiple machine learning models.
+- Develop a practical dashboard for cyber risk visualisation and decision support.
+
+---
+
+## Methodology
+
+The project follows the following workflow:
+
+1. Literature Review and Research Gap Identification
+2. Dataset Preparation
+3. Feature Selection
+4. Data Preprocessing
+5. Synthetic Cyber Risk Score Development
+6. Cyber Risk Classification
+7. Machine Learning Model Development
+8. Comparative Model Evaluation
+9. Stacking Ensemble Development
+10. Dashboard Development and Implementation
+
+---
+
+## Machine Learning Models
+
+The following machine learning models were evaluated:
 
 - Decision Tree
 - Random Forest
 - XGBoost
 - Stacking Ensemble
 
-The Stacking Ensemble combines Decision Tree, Random Forest, and XGBoost using a Logistic Regression meta-learner.
+### Best Model Performance
 
-The project also includes a prototype dashboard for interacting with the risk assessment framework and presenting the resulting risk classification in an accessible format.
+- Decision Tree: 76.44%
+- Random Forest: 92.25%
+- XGBoost: 92.19%
+- Stacking Ensemble: 95.75%
 
-## Research Focus
+---
 
-The project investigates how an integrated and interpretable machine learning approach can support cybersecurity risk assessment for SMEs, particularly where organisations may have limited cybersecurity resources and technical expertise.
+## Cyber Risk Dimensions
 
-## Methodology
+The framework incorporates three key cybersecurity dimensions:
 
-The overall workflow consists of:
+### Technical Factors
 
-1. Literature review and research gap identification
-2. Dataset preparation
-3. Feature selection
-4. Data preprocessing
-5. Synthetic risk-score construction
-6. Risk-level classification
-7. Machine learning model development
-8. Comparative model evaluation
-9. Stacking ensemble development
-10. Framework implementation and dashboard development
+- Multi-Factor Authentication (MFA)
+- Backup Availability
+- Incident Response Capability
+- Technical Security Controls
 
-## Models
+### Human Factors
 
-| Model | Purpose |
-|---|---|
-| Decision Tree | Primary interpretable classification model |
-| Random Forest | Comparative ensemble model |
-| XGBoost | Comparative boosting model |
-| Stacking Ensemble | Combines DT, RF and XGBoost using Logistic Regression |
+- Employee Training
+- Security Awareness
+- Human Resilience Score
 
-## Risk Dimensions
+### Organisational Factors
 
-The framework considers three main cybersecurity dimensions:
+- Cybersecurity Budget
+- Organisational Readiness
+- Governance and Policy Measures
 
-- **Technical factors**
-- **Human factors**
-- **Organisational factors**
+These factors are integrated within the cyber risk scoring framework to produce Low, Medium and High cyber risk classifications.
 
-These factors are incorporated into the proposed risk-scoring framework to produce Low, Medium, and High risk classifications.
+---
 
 ## Project Structure
 
 ```text
 Cyber_Security_Risk_Assessment/
+│
+├── Dashboard/
+│   └── application.py
 │
 ├── Data/
 │   ├── Raw/
@@ -70,10 +108,64 @@ Cyber_Security_Risk_Assessment/
 │
 ├── Notebooks/
 │
-├── Dashboard/
-│
 ├── Outputs/
 │   ├── Figures/
 │   └── Tables/
 │
+├── requirements.txt
+│
 └── README.md
+```
+
+---
+
+## Installation
+
+Install the required Python packages:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## Running the Dashboard
+
+Launch the Streamlit dashboard using:
+
+```bash
+streamlit run Dashboard/application.py
+```
+
+---
+
+## Research Contributions
+
+This research contributes to SME cybersecurity by:
+
+- Developing a socio-technical cyber risk assessment framework.
+- Introducing a synthetic cyber risk scoring methodology.
+- Demonstrating the effectiveness of machine learning for cyber risk prediction.
+- Evaluating Decision Tree, Random Forest, XGBoost and Stacking Ensemble models.
+- Developing a dashboard-based decision-support tool for SMEs.
+
+---
+
+## Author
+
+**Prakash Panta**  
+Master of ICT Research  
+Melbourne Institute of Technology (MIT)
+
+---
+
+## Repository
+
+This repository contains:
+
+- Source code
+- Datasets
+- Trained machine learning models
+- Experimental notebooks
+- Dashboard implementation
+- Results and outputs used in the research
